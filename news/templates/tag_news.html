@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+<head>
+    <title>Новости</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .news-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 80%;
+            height: auto;
+    }
+
+        .news-wrapper {
+            display: flex;
+            width: 100%;
+        }
+
+        .news-title {
+            flex: 1;
+            margin-right: 220px;
+        }
+
+        .news-title h3 {
+            margin: 0;
+        }
+
+        .news-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .news-image img {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="news-container"></div>
+<script src="{% static 'news/js/tag_news.js' %}"></script>
+</body>
+</html>
